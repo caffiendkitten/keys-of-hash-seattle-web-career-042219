@@ -13,7 +13,7 @@ class Hash
     new_array = []
     #return arguments
     arguments.each {|key, value|
-      binding.pry
+      pry
       if value == arguments
         new_array.push(key)
       end
