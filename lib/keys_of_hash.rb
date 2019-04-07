@@ -1,4 +1,4 @@
-require pry
+require 'pry'
 =begin
 :animals = {
 "sugar glider"=>"Australia",
