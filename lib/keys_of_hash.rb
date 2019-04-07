@@ -13,13 +13,14 @@ class Hash
     # code goes here
     new_array = []
     #return arguments
-    arguments.each {|key, value|
-      binding.pry
-      if value == arguments
-        new_array.push(key)
-      end
+    self.each {|element|
+      element.each {|key, value|
+        #binding.pry
+        if value == arguments
+          new_array.push(key)
+        end
+      }
     }
-
     return new_array
   end
 end
