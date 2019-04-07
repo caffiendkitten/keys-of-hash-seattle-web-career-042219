@@ -1,3 +1,4 @@
+require pry
 =begin
 :animals = {
 "sugar glider"=>"Australia",
@@ -13,7 +14,7 @@ class Hash
     new_array = []
     #return arguments
     arguments.each {|key, value|
-      pry
+      binding.pry
       if value == arguments
         new_array.push(key)
       end
