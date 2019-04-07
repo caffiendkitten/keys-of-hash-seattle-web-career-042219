@@ -12,10 +12,10 @@ class Hash
   def keys_of(*arguments)
     new_array = []
     #return arguments
-    self.each {|element|
-      element.each {|key, value|
+    self.each {|key, value|
+      value.each {|element|
         #binding.pry
-        if value == arguments
+        if element == arguments
           new_array.push(key)
         end
       }
