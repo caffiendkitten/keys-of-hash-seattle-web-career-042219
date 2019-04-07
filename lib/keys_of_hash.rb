@@ -13,10 +13,12 @@ class Hash
     new_array = []
     return arguments
     arguments.each {|key, value|
-      if value == arguments
+      value.each {|i|
+      if i == arguments
         new_array.push(key)
       end
       }
+    }
 
     return new_array
   end
