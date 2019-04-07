@@ -13,11 +13,9 @@ class Hash
     new_array = []
     return arguments
     arguments.each {|key, value|
-      value.each {|k,i|
-      if i == arguments
+      if value == arguments
         new_array.push(key)
       end
-      }
     }
 
     return new_array
