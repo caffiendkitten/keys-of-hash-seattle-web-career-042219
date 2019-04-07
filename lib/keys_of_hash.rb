@@ -15,7 +15,7 @@ class Hash
     self.each {|key, value|
       arguments.each {|element|
         #binding.pry
-        if element == arguments
+        if element == value
           new_array.push(key)
         end
       }
