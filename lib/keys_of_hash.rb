@@ -11,7 +11,7 @@ class Hash
   def keys_of(*arguments)
     # code goes here
     new_array = []
-    return arguments
+    #return arguments
     arguments.each {|key, value|
       if value == arguments
         new_array.push(key)
