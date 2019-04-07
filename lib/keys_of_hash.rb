@@ -13,7 +13,7 @@ class Hash
     new_array = []
     return arguments
     arguments.each {|key, value|
-      value.each {|i|
+      value.each {|k,i|
       if i == arguments
         new_array.push(key)
       end
