@@ -10,7 +10,6 @@
 =end
 class Hash
   def keys_of(*arguments)
-    # code goes here
     new_array = []
     #return arguments
     self.each {|element|
